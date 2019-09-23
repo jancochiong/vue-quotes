@@ -9,12 +9,10 @@
 </template>
 
 <script>
-    export default {
-        props: ['quotes']
-    }
+
 </script>
 
-<style lang="sass">
+<style>
     .panel-body{
         font-family: 'Arizonia', cursive;
         font-size: 24px;
@@ -23,8 +21,8 @@
 
     .quote{
         cursor: pointer;
-        &:hover{
-            background-color: #ffe2e2;
-        }
+    }
+    .quote:hover{
+        background-color: #ffe2e2;
     }
 </style>
