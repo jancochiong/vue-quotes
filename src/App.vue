@@ -29,6 +29,12 @@
         },
         methods: {
             newQuote(quote) {
+                if(this.quotes.length >= this.maxQuotes){
+                    return alert('Please delete Quotes first!');
+                }
+                if(quote === ''){
+                    return alert('Your quote is empty!');
+                }
                 this.quotes.push(quote);
             },
             deleteQuote(index){
